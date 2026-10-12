@@ -1,0 +1,34 @@
+name: ci
+
+on:
+  push:
+  pull_request:
+  workflow_dispatch:
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: unit tests
+        run: python3 -m unittest discover -s tests -v
+
+      - name: distribution check (structure, skills, credential scan)
+        run: python3 scripts/marketing_os.py check
+
+      - name: end to end on a clean temporary workspace
+        run: |
+          set -eu
+          WS="$(mktemp -d)/demo-workspace"
+          python3 scripts/marketing_os.py init --workspace "$WS"
+          python3 scripts/marketing_os.py doctor --workspace "$WS" || true
+          python3 scripts/marketing_os.py demo --workspace "$WS"
+          test -f "$WS"/output/demo-*/04-reconciliation-fictional.md
+
+      - name: package dry run
+        run: python3 scripts/marketing_os.py package --dry-run

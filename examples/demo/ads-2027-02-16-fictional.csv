@@ -1,0 +1,6 @@
+account_id,campaign_id,ad_id,ad_name,date_start,date_end,currency,timezone,attribution_window,spend,impressions,clicks,platform_results,results_action_type
+act_demo_000000000000001,c_demo_900001,a_demo_1001,hook-surprise-bill,2027-02-01,2027-02-14,EUR,Europe/Riga,7d_click,412.50,51200,640,14,offsite_purchase
+act_demo_000000000000001,c_demo_900001,a_demo_1002,hook-shoebox,2027-02-01,2027-02-14,EUR,Europe/Riga,7d_click,408.00,49780,503,19,offsite_purchase
+act_demo_000000000000001,c_demo_900001,a_demo_1003,hook-deadline,2027-02-01,2027-02-14,EUR,Europe/Riga,7d_click,22.40,2900,31,0,offsite_purchase
+act_demo_000000000000001,c_demo_900001,a_demo_1002,hook-shoebox,2027-02-01,2027-02-14,EUR,Europe/Riga,7d_click,408.00,49780,503,19,offsite_purchase
+act_demo_000000000000001,c_demo_900001,a_demo_1004,hook-broken-row,2027-02-01,2027-02-14,EUR,Europe/Riga,7d_click,n/a,1500,12,0,offsite_purchase
