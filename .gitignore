@@ -1,0 +1,40 @@
+# private business workspaces: never commit one
+*-os-workspace/
+my-business-os/
+workspace/
+workspaces/
+**/.marketing-os.json
+
+# raw inputs and exports
+**/sources/raw-*
+**/tests/*/data/*
+!**/tests/*/data/.gitkeep
+*.csv
+!examples/demo/*-fictional.csv
+
+# receipts, run notes, drafts from a real workspace
+receipts/
+**/output/
+**/runs/
+**/proposals/proposals.md
+**/learnings/learnings.md
+!templates/workspace/
+!templates/workspace/**/
+!templates/workspace/**
+
+# credentials
+.env
+.env.*
+global.env
+*.pem
+*.key
+credentials.json
+token.json
+
+# build and junk
+dist/
+build/
+__pycache__/
+*.pyc
+.DS_Store
+.venv/

@@ -1,0 +1,9 @@
+{
+  "fictional": true,
+  "business": "Fablewright Ledgers (invented for this kit)",
+  "ad_account_id": "act_demo_000000000000001",
+  "sales_system_id": "fablewright-demo-store",
+  "as_of": "2027-02-16",
+  "wait_days": 14,
+  "note": "synthetic numbers. not a real campaign and not an mcp response."
+}

@@ -1,0 +1,9 @@
+sales_system_id,order_id,order_date,amount,currency,refunded,customer_type,ad_id
+fablewright-demo-store,o_demo_5001,2027-02-03,240.00,EUR,no,new,a_demo_1001
+fablewright-demo-store,o_demo_5002,2027-02-06,240.00,EUR,no,new,a_demo_1001
+fablewright-demo-store,o_demo_5003,2027-02-08,240.00,EUR,no,new,a_demo_1002
+fablewright-demo-store,o_demo_5004,2027-02-09,240.00,EUR,yes,new,a_demo_1001
+fablewright-demo-store,o_demo_5006,2027-02-11,240.00,EUR,no,repeat,a_demo_1001
+fablewright-demo-store,o_demo_5007,2027-02-12,240.00,EUR,no,new,
+fablewright-demo-store,o_demo_5001,2027-02-03,240.00,EUR,no,new,a_demo_1001
+fablewright-demo-store,o_demo_5008,2027-02-13,not-a-number,EUR,no,new,a_demo_1002

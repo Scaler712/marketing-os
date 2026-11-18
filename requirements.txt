@@ -1,0 +1,5 @@
+# marketing-os has no dependencies.
+#
+# the command line tool uses the python standard library only, so there is nothing to
+# install. this file exists so that anyone looking for it finds the answer rather than
+# assuming a missing requirement. python 3.9 or newer.
